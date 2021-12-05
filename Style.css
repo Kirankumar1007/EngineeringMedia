@@ -1,0 +1,642 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.NavBar ul li a.active {
+  color: red;
+}
+
+header {
+  height: 80vh;
+  width: 100%;
+  background-color: white;
+}
+
+.MainPage {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  transition: top 0.3s;
+}
+
+.icon {
+  font-size: 20;
+  margin-left: 50px;
+}
+
+.Buttons {
+  margin-right: 50px;
+}
+
+.NavBar ul {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavBar ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 16;
+  font-weight: 700;
+  position: relative;
+}
+
+.NavBar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.NavBar ul li a:hover {
+  color: red;
+}
+
+.NavBar ul li ::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.NavBar ul li:hover ::after {
+  width: 100%;
+}
+
+.rightNav {
+  display: flex;
+  width: 660px;
+  justify-content: space-between;
+  /* background-color: blue; */
+  align-content: center;
+}
+
+.Buttons a button {
+  background-color: red;
+  color: white;
+  border-width: 0px;
+  border-radius: 5px;
+  padding: 2px 18px;
+  margin: 0px 3px;
+  font-size: 14;
+  font-weight: 200;
+  outline: none;
+}
+
+/* .Buttons button a{
+    color: white;
+    text-decoration: none;
+} */
+
+.Buttons a button:hover {
+  color: black;
+  background-color: rgb(233, 234, 236);
+}
+
+.icon h3 span {
+  color: red;
+}
+
+.MyName {
+  margin-top: 160px;
+  display: flex;
+  align-content: center;
+}
+
+.MyName h1 {
+  font-weight: bolder;
+  text-shadow: black;
+  color: white;
+  text-shadow: 0px 0px 22px #333333d3;
+  margin: 0px 12px;
+}
+
+#K {
+  font-size: 200px;
+  position: relative;
+  left: 300px;
+  transform: rotate(0deg);
+  font-family: "Titan One", cursive;
+  /* right: 300px; */
+  font-weight: 800;
+}
+
+#I {
+  font-size: 200px;
+  position: relative;
+  left: 276px;
+  transform: rotate(-20deg);
+  font-family: "Titan One", cursive;
+  /* right: 300px; */
+}
+
+#R {
+  font-size: 200px;
+  position: relative;
+  left: -170px;
+  right: 1;
+  transform: rotate(20deg);
+  font-family: "Titan One", cursive;
+  /* right: 300px; */
+}
+
+.MyName img {
+  position: relative;
+  left: 150px;
+  transform: rotate(-20deg);
+}
+
+#A {
+  font-size: 200px;
+  position: relative;
+  left: 520px;
+  transform: rotate(20deg);
+  font-family: "Titan One", cursive;
+  /* right: 300px; */
+}
+
+#N {
+  font-size: 200px;
+  position: relative;
+  left: 40px;
+  transform: rotate(-20deg);
+  font-family: "Titan One", cursive;
+  /* right: 300px; */
+}
+
+main p {
+  text-align: center;
+  width: 100%;
+  padding: 0px 250px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+main button {
+  text-align: center;
+  padding: 3px 24px;
+  color: white;
+  background-color: red;
+  border-width: 0px;
+  border-radius: 26px;
+  font-size: 18px;
+  margin-top: 70px;
+}
+
+main {
+  text-align: center;
+  align-content: center;
+}
+
+.Information {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  align-content: center;
+  text-align: center;
+  /* padding-top: 70px; */
+  margin-top: 70px;
+}
+
+.Information h1 {
+  color: white;
+  font-weight: 300;
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  margin-top: 70px;
+}
+
+.Information p {
+  color: white;
+  /* font-weight: 200; */
+  font-size: 18px;
+  padding: 0px 260px;
+}
+
+.ImgCard {
+  align-content: center;
+  text-align: center;
+  margin: 0px 30px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Card {
+  height: 220px;
+  width: 220px;
+  background-color: white;
+  border-radius: 7px;
+  text-align: center;
+  align-content: center;
+  margin: 0px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+}
+
+#one {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm25XxKJUVJFHOwBaIJ0H8ikNjnVuCae-h5A&usqp=CAU");
+}
+
+#two {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ7Gtt076v-u6KYPTaO3psd5BhxxXt4ZKU4A&usqp=CAU");
+}
+
+#three {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoP_ZQNxRkIlu0fOAyWm3aasT5HlC9aiz5Q&usqp=CAU");
+}
+
+#four {
+  background-image: url("https://images.template.net/wp-content/uploads/2015/08/Software-Engineer-Business-Card.jpg");
+}
+
+.red {
+  background-color: rgb(255, 37, 37);
+  height: 1px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3px;
+}
+
+.title h4 {
+  color: white;
+  text-align: center;
+  align-items: center;
+  width: 220px;
+  font-size: 18px;
+}
+
+.plans {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.plan1 {
+  height: 80vh;
+  background-color: white;
+  display: flex;
+  color: black;
+  max-width: 100%;
+  padding: 0px 50px;
+}
+
+/* @media (max-width:768px){
+    .plan1{
+        display: block;s
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width:760){
+    .Left{
+        width: 100%;
+    }
+} */
+
+.Left {
+  width: 50%;
+  margin-top: 110px;
+  /* background-color: yellow; */
+}
+
+.Left p {
+  text-align: justify;
+  width: 100%;
+}
+
+.Right {
+  width: 50%;
+  margin-top: 70px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.Right img {
+  width: 100%;
+  height: auto;
+}
+
+.Left h1 {
+  font-size: 3.75em;
+  font-weight: bold;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.footer {
+  padding: 50px;
+  background-color: black;
+  height: 50vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer h1 {
+  font-family: "Lobster", cursive;
+}
+
+.CardF1 {
+  height: 80px;
+  width: 180px;
+  border-radius: 7px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx-zEzKccnH6NqHcAf-Qs3kKNero9TCy7wIw&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.CardF2 {
+  height: 80px;
+  width: 180px;
+  border-radius: 7px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvdZPyNVSifJtEY1GUlF6GMa8XIvK-mtlHtw&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: left;
+}
+
+.CardF3 {
+  height: 80px;
+  width: 180px;
+  border-radius: 7px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJE_AhLcliwAwoDxQrTmPOTGQgtrtgPBYJw&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.CardF4 {
+  height: 80px;
+  width: 180px;
+  border-radius: 7px;
+  background-image: url("https://logos-download.com/wp-content/uploads/2019/01/Cognizant_Technology_Solutions_Corp_Logo-700x333.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.CardF5 {
+  height: 80px;
+  width: 180px;
+  border-radius: 7px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb6pIR5j_Jo0bR1PXnFPGyvjtinPdyfj1PHw&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.CardF6 {
+  height: 80px;
+  width: 180px;
+  border-radius: 7px;
+  background-color: white;
+  background-image: url("https://press.aboutamazon.com/system/files-encrypted/nasdaq_kms/inline-images/Amazon-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#crd {
+  margin-top: 40px;
+}
+
+/* This table can use for Services code in below line */
+
+.Nav {
+  width: 100%;
+  display: flex;
+  padding: 6px 50px;
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transition: top 0.3s;
+  top: 0;
+}
+
+/* .Nav h4{
+margin-left: 16px;
+
+} */
+
+.AllCrd {
+  width: 100%;
+  height: auto;
+  background-color: rgb(238, 238, 238);
+  color: black;
+  padding: 0px 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.AllCrd h5 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.AllCrd p {
+  color: gray;
+  text-align: justify;
+}
+
+.ServicesCrd {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.ServicesCrd div {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.ServicesCrd div:hover {
+  background-color: white;
+
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-14px);
+}
+
+.ServicesCrd div p {
+  padding: 0px 25px;
+  color: gray;
+  text-align: center;
+}
+
+.ServicesCrd div h3 {
+  font-weight: 600;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+/* Star About coding page */
+
+.Company {
+  padding: 0px 50px;
+  padding-top: 160px;
+}
+
+.Company p {
+  text-align: justify;
+}
+
+.bck {
+  background-color: rgb(240, 238, 238);
+}
+
+#clr {
+  color: red;
+}
+
+.dtl {
+  height: 70vh;
+  width: 100%;
+  background-color: black;
+  padding: 50px 70px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.dtl div {
+  width: 30%;
+}
+
+.dtl div h6 a {
+  color: lightgray;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.dtl div h6 {
+  margin-bottom: 12px;
+}
+
+.dtl div h6 a:hover {
+  color: yellow;
+}
+
+.dtl div input {
+  text-indent: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border-width: 0px;
+  outline: none;
+  width: 100%;
+}
+
+.backTB {
+  background-color: white;
+  padding: 2px 3px;
+  border-radius: 4px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.backTB button {
+  background-color: red;
+  border-width: 0px;
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Start Contact code in below */
+
+#Flg {
+  display: flex;
+  /* padding-top: 50px; */
+  padding-bottom: 10px;
+}
+
+.Box {
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); */
+  padding: 30px 80px;
+  border-radius: 10px;
+  height: 100%;
+  /* margin-top: 45px; */
+  text-align: start;
+}
+
+.Box form input {
+  width: 100%;
+  text-indent: 10px;
+  background-color: lightgray;
+  border-width: 0px;
+  outline: 0px;
+  border-radius: 3px;
+  margin: 8px 0px;
+  padding: 4px 0px;
+  font-size: 14px;
+}
+
+.Box form textarea {
+  height: 100px;
+  width: 100%;
+  text-indent: 10px;
+  background-color: lightgray;
+  border-width: 0px;
+  outline: 0px;
+  border-radius: 3px;
+  margin: 8px 0px;
+  padding: 4px 0px;
+  font-size: 14px;
+}
+
+.Box form button {
+  background-color: red;
+  color: white;
+  padding: 2px 14px;
+  border-radius: 2px;
+  border-width: 0px;
+}
+
+#higt {
+  background-color: rgb(236, 236, 236);
+}
+
+#higt h3 {
+  padding: 0px 50px;
+  padding-top: 130px;
+}
+
+#higt p {
+  padding: 0px 50px;
+  padding-bottom: 12px;
+}
+
+#space {
+  margin-left: 50px;
+}
+
+.futr {
+  height: 10vh;
+  text-align: center;
+  padding-top: 16px;
+  background-color: black;
+  color: white;
+}

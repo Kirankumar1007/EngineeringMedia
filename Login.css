@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+}
+
+
+
+.Main{
+    height: 100%;
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.FhaseDiv{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.LeftFhase{
+    width: 50%;
+    padding: 0px 10%;
+    padding-top: 30vh;
+    /* text-align: center; */
+}
+
+.RightFhase{
+    width: 50%;
+    padding: 40px;
+    padding-top: 14vh;
+}
+
+.RightFhase img{
+    height: 100%;
+    width: 100%;
+}
+
+form input{
+    background-color: white;;
+    outline: 0px;
+    margin: 6px 0px;
+    border-width: 0px;
+    border-radius: 3px;
+    text-indent: 2px;
+    padding: 4px 10px;
+    width: 100%;
+}
+
+#req1{
+    width: auto;
+    margin: 10px 0px;
+}
+
+form button{
+    background-color: red;
+    border-radius: 3px;
+    border-width: 0px;
+    color: white;
+    width: 100%;
+    padding: 4px 12px;
+}
+
+form input:hover{
+    box-shadow: 0px 0px 8px rgb(255, 208, 0);
+}
+
+#SignupBtn{
+    border-width: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#SignupBtn a{
+    border-width: 0px;
+    color: black;
+    text-decoration: none;
+}
+
+#SignupBtn a span{
+    color: blue;
+}
+
+#icon{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#icon span{
+    color: red;
+}
+
+.LeftFhase h2{
+    text-align: center;
+}
+
+@media (max-width: 480px){
+    .Main{
+        height: auto;
+        width: 100%;
+        padding: 0px 18px;
+        padding-top: 30px;
+    }
+
+    .FhaseDiv{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .RightFhase{
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .LeftFhase{
+        height: auto;
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 770px){
+    .Main{
+        height: auto;
+        width: 100%;
+        padding: 0px 60px;
+    }
+
+    .FhaseDiv{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .RightFhase{
+        height: auto;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .LeftFhase{
+        height: auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+    form input{
+        font-size: 20px;
+    }
+
+    form button{
+        font-size: 20px;
+    }
+
+    #SignupBtn{
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 770px) and (max-width: 1100px){
+    .Main{
+        height: auto;
+        width: 100%;
+        padding: 0px 40px;
+    }
+
+    .LeftFhase{
+        padding: 30px;
+        padding-top: 80px;
+    }
+
+    .RightFhase{
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+
+    form input{
+        font-size: 16px;
+    }
+
+    form label{
+        font-size: 16px;
+    }
+
+    form button{
+        font-size: 16px;
+    }
+
+    #SignupBtn{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1100px){
+    .Main{
+        height: auto;
+        width: 100%;
+        padding: 0px 40px;
+    }
+
+    .LeftFhase{
+        padding: 80px;
+        padding-top: 25vh;
+    }
+
+    .RightFhase{
+        padding: 60px;
+        padding-top: 10vh;
+    }
+
+
+    form input{
+        font-size: 20px;
+    }
+
+    form label{
+        font-size: 20px;
+    }
+
+    form button{
+        font-size: 20px;
+    }
+
+    #SignupBtn{
+        font-size: 20px;
+    }
+}

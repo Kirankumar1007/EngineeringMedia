@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+}
+
+
+body div{
+    height: auto;
+    padding: 0px 50px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+body div h2{
+    text-align: center;
+    font-weight: 700;
+}
+
+body h2 span{
+    color: red;
+    font-weight: 460;
+}
+
+.Signup{
+    display: flex;
+    width: 100%;
+}
+
+.left{
+    width: 50%;
+    padding-left: 100px;
+    /* padding-top: 40px; */
+}
+
+.left img{
+   height: 100%;
+   width: 100%;
+}
+
+form input{
+    padding: 3px 10px;
+    background-color: rgb(255, 255, 255);
+    outline: 0px;
+    border-radius: 3px;
+    border-width: 0px;
+    text-indent: 3px;
+    margin: 6px 3px;
+    width: 100%;
+}
+
+#Gender{
+    text-align: start;
+    width: auto;
+
+}
+
+.right{
+    padding: 0px 11%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 1px 0px;
+    width: 50%;
+}
+
+.right h2{
+    font-weight: 600;
+}
+
+form button{
+    background-color: red;
+    border-radius: 3px;
+    border-width: 0px;
+    color: white;
+    width: 100%;
+    padding: 4px 12px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+#SignupBtn{
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 4px;
+    margin-top: 6px;
+}
+
+#SignupBtn a{
+    color: black;
+    text-decoration: none;
+}
+
+#SignupBtn a span{
+    color: blue;
+    text-decoration: none;
+}
+
+@media (min-width: 500px) and (max-width: 1000px){
+    .Signup{
+        display: block;
+        height: auto;
+    }
+
+    .left{
+        height: auto;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .right{
+        height: auto;
+        width: 100%;
+        padding: 0px 1%;
+        padding-bottom: 5%;
+    }
+
+    .left img{
+        width: 100%;
+        height: auto;
+    }
+
+    body div{
+        padding: 0px 30px;
+        padding-top: 10px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .Signup{
+        display: block;
+        height: auto;
+    }
+
+    .left{
+        height: auto;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .right{
+        height: auto;
+        width: 100%;
+        padding: 0px 3px;
+        padding-bottom: 5%;
+    }
+
+    .left img{
+        width: 100%;
+        height: auto;
+    }
+
+    body div{
+        padding: 4px;
+        padding-top: 50px;
+
+    }
+
+}
